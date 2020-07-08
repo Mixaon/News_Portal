@@ -1,0 +1,2 @@
+# NewsPortal
+ Начальная часть backend

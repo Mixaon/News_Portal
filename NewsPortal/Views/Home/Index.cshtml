@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>News Portal</title>
+</head>
+<body>
+    <div>
+        <h3>News Portal</h3>
+        <table>
+            <tr>
+                <td><p>Image</p></td>
+                <td><p>Title</p></td>
+                <td><p>Description</p></td>
+                <td></td>
+            </tr>
+            @foreach (var b in ViewBag.News)
+            {
+        <tr>
+            <td><p>@b.NewsImage</p></td>
+            <td><p>@b.Title</p></td>
+            <td><p>@b.Description</p></td>
+        </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
